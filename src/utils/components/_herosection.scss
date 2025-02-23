@@ -1,0 +1,32 @@
+.hero-section-img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  object-position: left;
+
+  border-radius: 15px 15px 15px 0px;
+}
+.column {
+  background-size: cover;
+  font-family: "Roboto Mono";
+  background-position: center;
+
+  width: 25%;
+  height: 600px;
+  display: inline-block;
+  padding-bottom: 15px;
+}
+.center {
+  object-position: center;
+}
+
+@media (max-width: 991px) {
+  .column {
+    width: auto;
+    height: auto;
+    padding-bottom: 60px;
+  }
+  .hero-section-img {
+    padding-bottom: 7px;
+  }
+}

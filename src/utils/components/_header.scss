@@ -1,0 +1,16 @@
+.logo-img-header {
+  height: 52px;
+  width: auto;
+}
+.nav-link {
+  font-family: "Roboto Mono", serif;
+}
+.navbar-nav {
+  align-items: flex-end;
+}
+
+@media (max-width: 576px) {
+  .logo-img-header {
+    height: 45px;
+  }
+}

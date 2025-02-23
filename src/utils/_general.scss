@@ -1,0 +1,28 @@
+@import "./components/header";
+@import "./components/herosection";
+@import "./components/footer";
+@import "./components/typography";
+@import "./components/card";
+@import "./components/lightbox";
+
+.home-page {
+  max-width: 100vw;
+  max-height: calc(100vh - 48px);
+}
+.body {
+  max-width: 1920px;
+}
+.fs-13 {
+  font-size: 13px;
+}
+.d-flex-col {
+  display: flex;
+  flex-direction: column;
+}
+.btnup {
+  filter: drop-shadow(-5px 1px 0px white);
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  cursor: pointer;
+}

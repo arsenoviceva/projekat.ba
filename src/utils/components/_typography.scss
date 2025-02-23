@@ -1,0 +1,56 @@
+.navbar-icons {
+  font-family: "Roboto Mono";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21.1px;
+  text-align: right;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: black;
+}
+.navbar-icons-active {
+  font-family: "Roboto Mono";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21.1px;
+  text-align: right;
+  text-decoration: underline;
+
+  color: black;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.object-fit-cover {
+  object-fit: cover;
+}
+.about-us {
+  padding: 3rem;
+  font-family: "Roboto Mono";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0%;
+}
+.img-about {
+  object-fit: cover;
+  height: 212px;
+  margin-bottom: 10px;
+}
+.fs-11px {
+  font-size: 11px;
+}
+.fs-10px {
+  font-size: 10px;
+}
+.line {
+  height: 100px;
+}
+.project-images {
+  width: 100px;
+}
+
+.h-100px {
+  height: 100px;
+}
