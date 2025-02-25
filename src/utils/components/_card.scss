@@ -9,7 +9,14 @@
   height: 300px; /* Set a fixed height */
   object-fit: cover;
   margin-bottom: 5px;
+
+  transition: transform 180ms ease-out;
 }
+.card-img:hover {
+  transform: scale(1.02);
+  /* transition: transform 180ms ease-in; */
+}
+
 .card-text {
   font-family: "Roboto Mono";
   font-size: 14px;

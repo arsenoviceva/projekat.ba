@@ -26,3 +26,36 @@
   right: 5%;
   cursor: pointer;
 }
+
+.menu-icon {
+  cursor: pointer;
+  // select: none;
+  padding: 8px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+.menu-icon:hover {
+  background-color: #e0e0e0;
+}
+
+.line {
+  transition: all 0.3s ease;
+}
+
+.menu-icon.animate .line-1 {
+  transform: translateY(6px) rotate(45deg);
+  transform-origin: center;
+}
+
+.menu-icon.animate .line-2 {
+  opacity: 0;
+}
+
+.menu-icon.animate .line-3 {
+  transform: translateY(-6px) rotate(-45deg);
+  transform-origin: center;
+}

@@ -5,6 +5,12 @@
   object-position: left;
 
   border-radius: 15px 15px 15px 0px;
+
+  transition: transform 180ms ease-out;
+}
+.hero-section-img:hover {
+  transform: scale(1.02);
+  /* transition: transform 180ms ease-in; */
 }
 .column {
   background-size: cover;
