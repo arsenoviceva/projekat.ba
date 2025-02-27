@@ -58,6 +58,18 @@ export const AboutUs = () => {
                 sm={6}
                 className="d-flex-col align-items-center p-md-0 p-2"
               >
+                <img src="/images/o_nama/dragana.jpg" className="img-about" />
+                <div className="d-flex-col align-items-end justify-content-end">
+                  <p className="m-0 fs-11px"> // Dragana Panić </p>{" "}
+                  <p className="m-0 fs-10px"> Dipl. inž. arh. </p>
+                  <p className="m-0 fs-10px"> dragana@projekat.ba</p>
+                </div>
+              </Col>
+              <Col
+                md={3}
+                sm={6}
+                className="d-flex-col align-items-center p-md-0 p-2"
+              >
                 <img src="/images/o_nama/lidija.jpg" className="img-about" />
                 <div className="d-flex-col align-items-end justify-content-end">
                   <p className="m-0 fs-11px"> // Lidija Vukićević</p>{" "}
@@ -69,7 +81,7 @@ export const AboutUs = () => {
           </Container>
         </div>
       </Layout>
-      <Footer />
+      {/* <Footer className={"mt-5 pt-2 footer-container "} /> */}
     </>
   );
 };

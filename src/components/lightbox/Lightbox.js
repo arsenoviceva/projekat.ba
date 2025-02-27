@@ -23,32 +23,6 @@ const Lightbox = ({ images = [] }) => {
 
   return (
     <>
-      {/* <div
-        className="d-flex flex-column gap-3 align-items-center justify-content-center   py-5 "
-        ref={topRef}
-      >
-        <div className=" cursor-pointer   " onClick={() => setIsOpen(true)}>
-          <img src={mainImage} alt="Main" className="main-image-lightbox " />
-        </div>
-        <div
-          className="d-flex  gap-2 overflow-hidden thumbnails align-items-center justify-content-center"
-          onClick={scrollToTop}
-        >
-          {images.map((img, index) => (
-            <div
-              key={index}
-              className="cursor-pointer  "
-              onClick={() => setMainImage(img)}
-            >
-              <img
-                src={img}
-                alt={`Thumbnail ${index}`}
-                className="img-thumbnails  "
-              />
-            </div>
-          ))}
-        </div>
-      </div> */}
       <Container ref={topRef}>
         <Row className="d-flex align-items-center justify-content-center">
           <Col

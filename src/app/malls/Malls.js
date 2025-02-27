@@ -32,7 +32,7 @@ export const Malls = () => {
           </Row>
         </Container>
       </Layout>
-      <Footer />
+      {/* <Footer className={"mt-5 pt-2 footer-container "} /> */}
     </>
   );
 };

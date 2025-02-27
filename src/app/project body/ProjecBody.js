@@ -12,6 +12,7 @@ import { arhitekturaInfo } from "../../info/arhitekturaInfo";
 export const ProjectBody = () => {
   const param = useParams();
   const [images, setImages] = useState([]);
+  const [loading, setLoading] = useState(true);
   const url = window.location.href;
   const putanja = GetUrl2(url);
   const folder = GetUrl(url);
@@ -29,7 +30,7 @@ export const ProjectBody = () => {
         const jpgExists = await checkImageExists(jpgPath);
         if (jpgExists) {
           imageList.push(jpgPath);
-          continue; // Skip checking PNG if JPG exists
+          continue;
         }
 
         const pngExists = await checkImageExists(pngPath);
@@ -39,6 +40,7 @@ export const ProjectBody = () => {
       }
 
       setImages(imageList);
+      setLoading(false);
     };
 
     fetchImages();
@@ -56,11 +58,17 @@ export const ProjectBody = () => {
   return (
     <>
       <Layout activeRoute={folder}>
-        <Container className="">
+        <Container className="project-container">
           <Row className="p-lg-4 p-0">
-            <Lightbox images={images} />
-            {arhitekturaInfo?.map((arhitektura, index) => {
-              return arhitektura.folder === folder ? (
+            {loading ? (
+              <div className="loading-spinner">
+                Fotografije se učitavaju ...{" "}
+              </div>
+            ) : (
+              <Lightbox images={images} />
+            )}
+            {arhitekturaInfo?.map((arhitektura, index) =>
+              arhitektura.folder === folder ? (
                 <div key={index} className="info-klijent">
                   {arhitektura.info.split(",").map((line, i) => (
                     <span key={i}>
@@ -69,10 +77,10 @@ export const ProjectBody = () => {
                     </span>
                   ))}
                 </div>
-              ) : null;
-            })}
-            {enterijeriInfo?.map((enterijer, index) => {
-              return enterijer.folder === folder ? (
+              ) : null
+            )}
+            {enterijeriInfo?.map((enterijer, index) =>
+              enterijer.folder === folder ? (
                 <div key={index} className="info-klijent">
                   {enterijer.info.split(",").map((line, i) => (
                     <span key={i}>
@@ -81,10 +89,10 @@ export const ProjectBody = () => {
                     </span>
                   ))}
                 </div>
-              ) : null;
-            })}
-            {trznicentri?.map((mall, index) => {
-              return mall.folder === folder ? (
+              ) : null
+            )}
+            {trznicentri?.map((mall, index) =>
+              mall.folder === folder ? (
                 <div key={index} className="info-klijent">
                   {mall.info.split(",").map((line, i) => (
                     <span key={i}>
@@ -93,12 +101,12 @@ export const ProjectBody = () => {
                     </span>
                   ))}
                 </div>
-              ) : null;
-            })}
+              ) : null
+            )}
           </Row>
         </Container>
       </Layout>
-      <Footer />
+      {/* <Footer className={"mt-2 pt-2 footer-container-btn"} /> */}
     </>
   );
 };

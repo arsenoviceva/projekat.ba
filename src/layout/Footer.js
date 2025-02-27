@@ -2,14 +2,14 @@ import { Row, Container, Col } from "react-bootstrap";
 import { FaEnvelope, FaLocationDot, FaInstagram } from "react-icons/fa6";
 import { FaPhoneAlt, FaFacebook, FaLinkedin } from "react-icons/fa";
 
-export const Footer = () => {
+export const Footer = ({ className }) => {
   return (
-    <Container className="mt-5 pt-2 footer-container">
-      <Row className="justify-content-between">
-        <Col className="d-md-none d-flex mb-5">
+    <Container className="mt-5 pt-2 bottom">
+      <Row className="justify-content-between  ">
+        <Col className="d-lg-none d-flex mb-5">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2833.0787919695513!2d19.2218121!3d44.7588078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475be91d681b8e15%3A0xab646f98e541a678!2sMe%C5%A1e%20Selimovi%C4%87a%2024a%2C%20Bijeljina%2076300!5e0!3m2!1sen!2sba!4v1739269392518!5m2!1sen!2sba"
-            width="600"
+            width="700"
             height="250"
             allowfullscreen=""
             loading="lazy"
@@ -87,7 +87,8 @@ export const Footer = () => {
             </a>
           </div>
         </Col>
-        <div className="d-flex flex-column align-items-center justify-content-center pt-2">
+
+        <div className="d-flex flex-column align-items-center justify-content-center pt-2  ">
           <p className="m-0   info">
             projekat.ba © 2025 Sva prava zadržana Studio
           </p>

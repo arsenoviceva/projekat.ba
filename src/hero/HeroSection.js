@@ -8,12 +8,12 @@ export const HeroSection = () => {
   };
 
   return (
-    <Container className="mt-5">
+    <Container className="mt-5  ">
       <Row>
         <Col lg={3} className="column  ">
           <img
             src="/images/arhitektura/autobuska_stanica/1.jpg"
-            className="hero-section-img cursor-pointer"
+            className="hero-section-img cursor-pointer mb-1"
             onClick={() => onClickHandler("arhitektura/autobuska_stanica/7")}
           />
           <p className="d-flex align-items center justify-content-end m-0 fs-13">
@@ -27,7 +27,7 @@ export const HeroSection = () => {
         <Col lg={3} className="column">
           <img
             src="/images/arhitektura/stanisic_kuca/1.jpg"
-            className="hero-section-img cursor-pointer center"
+            className="hero-section-img cursor-pointer center mb-1"
             onClick={() => onClickHandler("arhitektura/stanisic_kuca/7")}
           />
           <p className="d-flex align-items center justify-content-end m-0 fs-13">
@@ -42,7 +42,7 @@ export const HeroSection = () => {
         <Col lg={3} className="column">
           <img
             src="/images/arhitektura/promenada_3/1.jpg"
-            className="hero-section-img cursor-pointer "
+            className="hero-section-img cursor-pointer mb-1"
             onClick={() => onClickHandler("arhitektura/promenada_3/4")}
           />
           <p className="d-flex align-items center justify-content-end m-0 fs-13">
@@ -55,16 +55,16 @@ export const HeroSection = () => {
         </Col>
         <Col lg={3} className="column">
           <img
-            src="/images/arhitektura/autobuska_stanica/1.jpg"
-            className="hero-section-img cursor-pointer "
-            onClick={() => onClickHandler("arhitektura/promenada_3/4")}
+            src="/images/enterijeri/fantasia/1.jpg"
+            className="hero-section-img cursor-pointer mb-1"
+            onClick={() => onClickHandler("enterijeri/fantasia/13")}
           />
           <p className="d-flex align-items center justify-content-end m-0 fs-13">
-            // Karađorđeva
+            // Restoran Fantasia
           </p>
           <p className="d-flex align-items center justify-content-end m-0 fs-13">
             {" "}
-            Bijeljina 2019
+            Bijeljina 2023
           </p>
         </Col>
       </Row>

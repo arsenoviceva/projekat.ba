@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.scss";
 
 import { Footer } from "./layout/Footer";
@@ -11,8 +10,16 @@ import { Contact } from "./app/contact/Contact";
 import { AboutUs } from "./app/about/AboutUs";
 import { Clients } from "./app/clients/Clients";
 import { ProjectBody } from "./app/project body/ProjecBody";
+import { useEffect } from "react";
+import ReactGA from "react-ga4";
+import { useLocation } from "react-router-dom";
 
 function App() {
+  const location = useLocation();
+
+  useEffect(() => {
+    ReactGA.send({ hitType: "pageview", page: location.pathname });
+  }, [location]);
   return (
     <>
       <Routes>
@@ -30,6 +37,7 @@ function App() {
         <Route path="/trzni_centri/:folder/:id" element={<ProjectBody />} />
         <Route path="/enterijeri/:folder/:id" element={<ProjectBody />} />
       </Routes>
+      <Footer />
     </>
   );
 }

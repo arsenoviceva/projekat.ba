@@ -7,7 +7,7 @@ export const Home = () => {
     <div className="home-page">
       <Header />
       <HeroSection />
-      <Footer />
+      {/* <Footer className={"mt-2 pt-2 footer-container-btn"} /> */}
     </div>
   );
 };

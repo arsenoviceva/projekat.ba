@@ -37,7 +37,7 @@ export const Architecture = () => {
         </Container>
       </Layout>
 
-      <Footer />
+      {/* <Footer className={"mt-5 pt-2 footer-container "} /> */}
     </>
   );
 };
